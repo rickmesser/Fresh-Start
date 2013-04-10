@@ -1,0 +1,93 @@
+!!!
+%html.no-js{:lang => "en"}
+  %head
+    %meta{:charset => "utf-8"}/
+    %title Fresh Start
+    %meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}/
+    %meta{:content => "", :name => "description"}/
+    %link{:href => "humans.txt", :rel => "author"}/
+    %link{:href => "_/css/main.css", :rel => "stylesheet"}/
+    :css
+      body {
+        padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+      }
+        %link{:href => "_/css/responsive.css", :rel => "stylesheet"}/
+    /[if lt IE 9]
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    / Touch icons
+    %link{:href => "_/img/favicon.ico", :rel => "shortcut icon"}/
+    %link{:href => "_/img/apple-touch-icon-144-precomposed.png", :rel => "apple-touch-icon-precomposed", :sizes => "144x144"}/
+    %link{:href => "_/img/apple-touch-icon-114-precomposed.png", :rel => "apple-touch-icon-precomposed", :sizes => "114x114"}/
+    %link{:href => "_/img/apple-touch-icon-72-precomposed.png", :rel => "apple-touch-icon-precomposed", :sizes => "72x72"}/
+    %link{:href => "_/img/apple-touch-icon-57-precomposed.png", :rel => "apple-touch-icon-precomposed"}/
+  %body
+    .navbar.navbar-inverse.navbar-fixed-top
+      .navbar-inner
+        .container
+          %a.btn.btn-navbar{"data-target" => ".nav-collapse", "data-toggle" => "collapse"}
+            %span.icon-bar
+            %span.icon-bar
+            %span.icon-bar
+          %a.brand{:href => "#"} Fresh Start
+          .nav-collapse.collapse
+            %ul.nav.pull-right
+              %li
+                %a{:href => "#about"} Link 1
+              %li
+                %a{:href => "#contact"} Link 2
+              %li.divider-vertical
+              %li.dropdown
+                %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}
+                  Dropdown
+                  %b.caret
+                %ul.dropdown-menu
+                  %li
+                    %a{:href => "#"} Sub link 1
+                  %li
+                    %a{:href => "#"} Sub link 2
+                  %li
+                    %a{:href => "#"} Sub link 3
+                  %li.divider
+                  %li
+                    %a{:href => "#"} Separated link 1
+                  %li.divider
+                  %li
+                    %a{:href => "#"} Separated link 2
+          / /.nav-collapse
+    .container
+      %h1 Let's Start Fresh
+      %h3 The best modern front-end tools in one place.
+      %p For the beginner developer that wants to start with all the modern tools, all linked up at the start.
+      %p Here's what we're starting with:
+      %ul
+        %li
+          %a{:href => "http://twitter.github.com/bootstrap/"} Twitter Bootstrap
+          with
+          %a{:href => "http://lesscss.org"} LESS
+        %li
+          %a{:href => "http://html5boilerplate.com/"} HTML5 Boilerplate
+        %li
+          %a{:href => "http://code.google.com/p/html5shiv/"} HTML5 Shiv
+        %li
+          %a{:href => "http://html5reset.org/"} HTML5 Reset
+          Folder Structure
+        %li
+          Good Ole
+          %a{:href => "http://jquery.com/"} jQuery
+          (v1.8.2)
+    / /container
+    / javascript
+    %script{:src => "_/js/vendor/jquery-1.9.1.min.js"}
+    %script{:src => "_/js/plugins.js"}
+    %script{:src => "_/js/bootstrap-transition.js"}
+    %script{:src => "_/js/bootstrap-alert.js"}
+    %script{:src => "_/js/bootstrap-modal.js"}
+    %script{:src => "_/js/bootstrap-dropdown.js"}
+    %script{:src => "_/js/bootstrap-scrollspy.js"}
+    %script{:src => "_/js/bootstrap-tab.js"}
+    %script{:src => "_/js/bootstrap-tooltip.js"}
+    %script{:src => "_/js/bootstrap-popover.js"}
+    %script{:src => "_/js/bootstrap-button.js"}
+    %script{:src => "_/js/bootstrap-collapse.js"}
+    %script{:src => "_/js/bootstrap-carousel.js"}
+    %script{:src => "_/js/bootstrap-typeahead.js"}
