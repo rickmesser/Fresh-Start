@@ -6,7 +6,9 @@
     %meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}/
     %meta{:content => "", :name => "description"}/
     %link{:href => "humans.txt", :rel => "author"}/
+    %script{:src => "_/js/vendor/modernizr.custom.59114.js"}
     %link{:href => "_/css/main.css", :rel => "stylesheet"}/
+    %link{:href => "_/css/responsive.css", :rel => "stylesheet"}/
     :css
       body {
         padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
@@ -15,6 +17,7 @@
     /[if lt IE 9]
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     / Touch icons
+
     %link{:href => "_/img/favicon.ico", :rel => "shortcut icon"}/
     %link{:href => "_/img/apple-touch-icon-144-precomposed.png", :rel => "apple-touch-icon-precomposed", :sizes => "144x144"}/
     %link{:href => "_/img/apple-touch-icon-114-precomposed.png", :rel => "apple-touch-icon-precomposed", :sizes => "114x114"}/
@@ -65,6 +68,8 @@
           with
           %a{:href => "http://lesscss.org"} LESS
         %li
+          %a{:href => "http://haml.info/"} HAML
+        %li
           %a{:href => "http://html5boilerplate.com/"} HTML5 Boilerplate
         %li
           %a{:href => "http://code.google.com/p/html5shiv/"} HTML5 Shiv
@@ -72,9 +77,15 @@
           %a{:href => "http://html5reset.org/"} HTML5 Reset
           Folder Structure
         %li
+          %a{:href => "http://modernizr.com/"} Modernizr
+        %li
           Good Ole
           %a{:href => "http://jquery.com/"} jQuery
-          (v1.8.2)
+          (v1.9.1)
+        %li
+          Recommend using 
+          %a{:href => "http://incident57.com/codekit/"} Codekit
+          to compile your preprocessed code
     / /container
     / javascript
     %script{:src => "_/js/vendor/jquery-1.9.1.min.js"}
@@ -91,3 +102,5 @@
     %script{:src => "_/js/bootstrap-collapse.js"}
     %script{:src => "_/js/bootstrap-carousel.js"}
     %script{:src => "_/js/bootstrap-typeahead.js"}
+    %script{:src => "_/js/main.js"}
+
