@@ -1,3 +1,5 @@
+$('#navbar').affix();
+
 // Initiate Carousel Automatically
 
 $('.carousel').carousel({
