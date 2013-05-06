@@ -1,3 +1,5 @@
+
+$('body').scrollspy();
 $('#navbar').affix();
 
 // Initiate Carousel Automatically
